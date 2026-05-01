@@ -1,0 +1,1 @@
+export { ScooterSVG } from './ScooterSVG';
