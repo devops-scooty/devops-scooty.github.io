@@ -17,7 +17,7 @@ const jsonLd = {
   "@context": "[https://schema.org](https://schema.org)",
   "@type": "Organization",
   "name": "Scooty XP",
-  "url": "https://myscooty.ng",
+  "url": "[https://myscooty.ng](https://myscooty.ng)",
   "logo": "[https://myscooty.ng/images/scooty-xp-logo.png](https://myscooty.ng/images/scooty-xp-logo.png)",
   "contactPoint": {
     "@type": "ContactPoint",
@@ -28,18 +28,15 @@ const jsonLd = {
   }
 };
 
-// Render inside <head>
-// <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://myscooty.ng"),
+  metadataBase: new URL("[https://myscooty.ng](https://myscooty.ng)"),
   title: "Scooty XP — Fast Delivery in Lagos | Groceries, Food & More",
   description: "Order groceries, food, medicines and more across Lagos. Fast, reliable delivery with Scooty XP.",
   keywords: ["delivery Lagos", "grocery delivery Nigeria", "food delivery Lagos"],
   openGraph: {
     title: "Scooty XP — Fast Delivery in Lagos",
     description: "Your everyday delivery, fast and easy.",
-    url: "https://myscooty.ng",
+    url: "[https://myscooty.ng](https://myscooty.ng)",
     siteName: "Scooty XP",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
     locale: "en_NG",
@@ -57,6 +54,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

@@ -15,7 +15,7 @@ export default function FAQPage() {
         <AccordionItem value="item-1">
           <AccordionTrigger>How do I place an order?</AccordionTrigger>
           <AccordionContent>
-            You can place an order by downloading the Scooty XP app from the App Store or Google Play Store, or directly through our website via the 'Order Now' button.
+            You can place an order by downloading the Scooty XP app from the App Store or Google Play Store, or directly through our website via the &apos;Order Now&apos; button.
           </AccordionContent>
         </AccordionItem>
         {/* Add more items based on documentation */}

@@ -7,7 +7,8 @@ export const requestNotificationPermission = async () => {
     const token = await getToken(messaging, {
       vapidKey: process.env.NEXT_PUBLIC_FIREBASE_VAPID_KEY,
     });
+    console.log("FCM Token:", token); 
     // POST /api/push/register with token
-    // await saveTokenToBackend(token);
+    // await saveTokenToBackend(token); 
   }
 };
