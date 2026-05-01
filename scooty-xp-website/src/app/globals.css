@@ -1,10 +1,37 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
-
-@custom-variant dark (&:is(.dark *));
-/* app/globals.css */
+/* src/app/globals.css */
 @import url('[https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap](https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap)');
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Typography */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Colors */
+  --color-orange: #FF6B00;
+  --color-orange-light: #FF8C3A;
+  --color-orange-dark: #CC5500;
+  
+  --color-blue: #003366;
+  --color-blue-mid: #004C99;
+  --color-blue-light: #E8F0FA;
+}
+
+:root {
+  /* Shadows & Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  
+  --shadow-md: 0 4px 20px rgba(0,51,102,0.10);
+  
+  /* ... keep the rest of the shadcn/ui variables generated here ... */
+}
+
+
 
 :root {
   /* Typography */
