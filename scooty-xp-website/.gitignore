@@ -12,9 +12,10 @@
 
 # testing
 /coverage
-
+docs/
 # next.js
 /.next/
+/.vscode
 
 
 # production

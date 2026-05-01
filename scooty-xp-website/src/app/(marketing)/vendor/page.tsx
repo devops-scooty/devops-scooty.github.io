@@ -43,11 +43,14 @@ export default function VendorPage() {
       <main className="flex-grow pt-32 pb-20 bg-gray-50">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
-            <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-blue-900">
+                        <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-blue-900">
               Grow your business with Scooty XP
             </h1>
             <p className="mb-8 text-gray-600 text-lg">
-              Join hundreds of vendors reaching more customers across Lagos. Fill out the form below and our partnerships team will contact you.
+              Join hundreds of vendors across Lagos. We build merchant trust by design:
+              enjoy our transparent ~9.1% take-rate explicitly displayed on every order card,
+              manage inventory with simple toggles, and utilize custom QR code generation
+              to drive your offline-to-online growth.
             </p>
 
             {isSuccess ? (

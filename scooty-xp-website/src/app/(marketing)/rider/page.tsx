@@ -98,11 +98,11 @@ export default function RiderPage() {
                   <p className="text-gray-600 text-sm">iOS or Android device with a data plan.</p>
                 </div>
               </li>
-              <li className="flex gap-4">
+                            <li className="flex gap-4">
                 <div className="bg-blue-50 p-3 rounded-full text-blue-900 h-min"><IdCard size={24} /></div>
                 <div>
-                  <h4 className="font-bold text-gray-900">Valid ID</h4>
-                  <p className="text-gray-600 text-sm">Driver's license or National ID, plus proof of address.</p>
+                  <h4 className="font-bold text-gray-900">Rigorous Verification</h4>
+                  <p className="text-gray-600 text-sm">Valid ID, Driver's License, and dual photo uploads (your face + vehicle photo) required for trust and safety.</p>
                 </div>
               </li>
             </ul>
