@@ -1,4 +1,4 @@
-// lib/schemas/forms.ts
+// src/lib/schemas/forms.ts
 import { z } from "zod";
 
 export const vendorSignupSchema = z.object({

@@ -1,12 +1,35 @@
-# Documentation Index
+# Repository Index
 
-_Auto-generated on Fri May  1 15:40:38 UTC 2026_
+_Auto-generated on Fri May  1 15:57:45 UTC 2026_
 
-
-
-
-
-## .
-## scooty-xp-website
-- [NAV.md](./NAV.md)
-- [README.md](scooty-xp-website/README.md)
+- [NAV.md](NAV.md)
+- [README_INDEX.md](README_INDEX.md)
+- [scooty-xp-website/README.md](scooty-xp-website/README.md)
+- [scooty-xp-website/next-env.d.ts](scooty-xp-website/next-env.d.ts)
+- [scooty-xp-website/next.config.ts](scooty-xp-website/next.config.ts)
+- [scooty-xp-website/src/app/(marketing)/about/page.tsx](scooty-xp-website/src/app/(marketing)/about/page.tsx)
+- [scooty-xp-website/src/app/(marketing)/blog/page.tsx](scooty-xp-website/src/app/(marketing)/blog/page.tsx)
+- [scooty-xp-website/src/app/(marketing)/contact/page.tsx](scooty-xp-website/src/app/(marketing)/contact/page.tsx)
+- [scooty-xp-website/src/app/(marketing)/faq/page.tsx](scooty-xp-website/src/app/(marketing)/faq/page.tsx)
+- [scooty-xp-website/src/app/(marketing)/page.tsx](scooty-xp-website/src/app/(marketing)/page.tsx)
+- [scooty-xp-website/src/app/(marketing)/rider/page.tsx](scooty-xp-website/src/app/(marketing)/rider/page.tsx)
+- [scooty-xp-website/src/app/(marketing)/services/page.tsx](scooty-xp-website/src/app/(marketing)/services/page.tsx)
+- [scooty-xp-website/src/app/(marketing)/vendor/page.tsx](scooty-xp-website/src/app/(marketing)/vendor/page.tsx)
+- [scooty-xp-website/src/app/layout.tsx](scooty-xp-website/src/app/layout.tsx)
+- [scooty-xp-website/src/components/icons/ScooterSVG.tsx](scooty-xp-website/src/components/icons/ScooterSVG.tsx)
+- [scooty-xp-website/src/components/icons/index.ts](scooty-xp-website/src/components/icons/index.ts)
+- [scooty-xp-website/src/components/layout/Footer.tsx](scooty-xp-website/src/components/layout/Footer.tsx)
+- [scooty-xp-website/src/components/layout/Header.tsx](scooty-xp-website/src/components/layout/Header.tsx)
+- [scooty-xp-website/src/components/sections/Hero.tsx](scooty-xp-website/src/components/sections/Hero.tsx)
+- [scooty-xp-website/src/components/sections/HowItWorks.tsx](scooty-xp-website/src/components/sections/HowItWorks.tsx)
+- [scooty-xp-website/src/components/sections/Testimonials.tsx](scooty-xp-website/src/components/sections/Testimonials.tsx)
+- [scooty-xp-website/src/components/ui/button.tsx](scooty-xp-website/src/components/ui/button.tsx)
+- [scooty-xp-website/src/lib/firebase/push.ts](scooty-xp-website/src/lib/firebase/push.ts)
+- [scooty-xp-website/src/lib/schemas/forms.ts](scooty-xp-website/src/lib/schemas/forms.ts)
+- [scooty-xp-website/src/lib/store/useBasketStore.ts](scooty-xp-website/src/lib/store/useBasketStore.ts)
+- [scooty-xp-website/src/lib/types/checkout.ts](scooty-xp-website/src/lib/types/checkout.ts)
+- [scooty-xp-website/src/lib/types/promo.ts](scooty-xp-website/src/lib/types/promo.ts)
+- [scooty-xp-website/src/lib/types/tracking.ts](scooty-xp-website/src/lib/types/tracking.ts)
+- [scooty-xp-website/src/lib/utils.ts](scooty-xp-website/src/lib/utils.ts)
+- [scooty-xp-website/src/lib/utils/formatters.ts](scooty-xp-website/src/lib/utils/formatters.ts)
+- [scooty-xp-website/tailwind.config.ts](scooty-xp-website/tailwind.config.ts)
