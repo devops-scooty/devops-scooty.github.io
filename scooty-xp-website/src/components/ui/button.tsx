@@ -63,5 +63,12 @@ function Button({
     />
   )
 }
-
+export type ButtonProps = {
+  variant: "primary" | "secondary" | "outline" | "ghost";
+  size: "sm" | "md" | "lg";
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
+  loading?: boolean;
+  fullWidth?: boolean;
+}
 export { Button, buttonVariants }

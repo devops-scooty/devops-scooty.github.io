@@ -1,17 +1,22 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
+	"version": "2.0.0",
+	"tasks": [
         {
-            "label": "build",
-            "type": "shell",
-            "command": "npm run build"
+            "type": "npm",
+            "script": "local-build",
+            "path": "scooty-xp-website",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: local-build",
+            "detail": "npm run build"
         },
         {
-            "label": "dev",
-            "type": "shell",
-            "command": "npm run dev"
+            "type": "npm",
+            "script": "local-dev",
+            "path": "scooty-xp-website",
+            "problemMatcher": [],
+            "label": "npm: local-dev",
+            "detail": "npm run build && npm run dev"
         }
     ]
 }
