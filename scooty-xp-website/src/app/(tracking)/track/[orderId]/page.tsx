@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Package, MapPin, CheckCircle2, Navigation, Loader2 } from "lucide-react";
+import { Package,  CheckCircle2, Navigation, Loader2 } from "lucide-react";
 
 export default function OrderTrackingPage({ params }: { params: { orderId: string } }) {
   const [status, setStatus] = useState<number>(0);
