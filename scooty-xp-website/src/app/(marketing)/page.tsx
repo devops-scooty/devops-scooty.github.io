@@ -1,6 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { HeroAnimation } from "@/components/sections/Hero";
+import { HeroAnimation } from "@/components/sections/Hero"; 
 import { FeaturedServices } from "@/components/sections/FeaturedServices";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -13,7 +13,7 @@ export default function Homepage() {
     <>
       <Header />
       <main className="flex flex-col min-h-screen">
-
+        
         {/* Section 1: Hero */}
         <section className="relative w-full bg-blue-900 pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 to-orange-500/30 z-10" />
@@ -26,7 +26,7 @@ export default function Homepage() {
                 Your Everyday Delivery, Fast & Easy!
               </p>
               <p className="text-lg mb-10 text-blue-100 leading-relaxed">
-                Welcome to Scooty XP, the revolutionary tech-enabled logistics platform and "super-app" ecosystem transforming last-mile delivery and field services in Lagos, Nigeria.
+                Welcome to Scooty XP, the revolutionary tech-enabled logistics platform and &quot;super-app&quot; ecosystem transforming last-mile delivery and field services in Lagos, Nigeria.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white text-lg h-14 px-8">

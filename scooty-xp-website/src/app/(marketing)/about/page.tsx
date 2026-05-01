@@ -7,7 +7,7 @@ export default function AboutPage() {
     <>
       <Header />
       <main className="grow pt-32 pb-20">
-
+        
         {/* Hero Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-center">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-blue-900 mb-6">
@@ -24,7 +24,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-orange-500 mb-4">Our Mission</h2>
               <p className="text-lg text-blue-50 leading-relaxed">
-                To deliver fast, elite, and efficient solutions that empower Nigerian businesses, creating a true "All-in-One" household application.
+                To deliver fast, elite, and efficient solutions that empower Nigerian businesses, creating a true &quot;All-in-One&quot; household application.
               </p>
             </div>
             <div>
@@ -40,14 +40,14 @@ export default function AboutPage() {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
           <h2 className="text-3xl font-heading font-bold text-center text-blue-900 mb-16">Our Leadership</h2>
           <div className="grid md:grid-cols-3 gap-8">
-
+            
             <Card className="border-none shadow-sm bg-gray-50">
               <CardContent className="p-8">
                 <div className="w-20 h-20 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center text-2xl font-bold mb-6">CM</div>
                 <h3 className="text-2xl font-bold text-blue-900 mb-1">Chatru Moorjani</h3>
                 <p className="text-orange-500 font-semibold mb-4">Director</p>
                 <p className="text-gray-600">
-                  A results-driven Business Executive leading the strategic expansion of the multi-vertical super-app across Nigeria. With a background from King's College London, he brings strong expertise in platform scaling, user acquisition, and merchant partnerships.
+                  A results-driven Business Executive leading the strategic expansion of the multi-vertical super-app across Nigeria. With a background from King&apos;s College London, he brings strong expertise in platform scaling, user acquisition, and merchant partnerships.
                 </p>
               </CardContent>
             </Card>
@@ -69,7 +69,7 @@ export default function AboutPage() {
                 <h3 className="text-2xl font-bold text-blue-900 mb-1">Anthony Akpotu</h3>
                 <p className="text-orange-500 font-semibold mb-4">Operations Manager</p>
                 <p className="text-gray-600">
-                  A seasoned operations leader with broad expertise in last-mile logistics and fleet management. He oversees the day-to-day operations of Scooty XP, driving efficiency across the platform's 8-vertical grid to ensure seamless fulfillment.
+                  A seasoned operations leader with broad expertise in last-mile logistics and fleet management. He oversees the day-to-day operations of Scooty XP, driving efficiency across the platform&apos;s 8-vertical grid to ensure seamless fulfillment.
                 </p>
               </CardContent>
             </Card>

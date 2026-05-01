@@ -15,7 +15,7 @@ export default function ServicesPage() {
         </div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-
+          
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
             <div className="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center shrink-0">
               <Layers className="text-orange-500 w-8 h-8" />
@@ -52,7 +52,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <h2 className="text-2xl font-bold text-blue-900 mb-2">4. Scooty XP Provider (Business Management)</h2>
-              <p className="text-gray-600">A business management tool for service business owners. Providers can add/remove workers, set precise hourly pay rates, and view their team's real-time status to optimize dispatching.</p>
+              <p className="text-gray-600">A business management tool for service business owners. Providers can add/remove workers, set precise hourly pay rates, and view their team&apos;s real-time status to optimize dispatching.</p>
             </div>
           </div>
 

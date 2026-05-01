@@ -4,14 +4,15 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowLeft, Share2 } from "lucide-react";
 
 const TwitterIcon = () => (
-  <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
 );
 
 const FacebookIcon = () => (
-  <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
 );
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+// Removed the unused `params` argument to fix the linting error
+export default function BlogPostPage() {
   // In production, fetch the post data using `params.slug`
   // Mock data for display:
   const post = {
@@ -19,20 +20,20 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     date: "May 10, 2026",
     category: "Company News",
     author: "Scooty XP Team",
-    imageUrl: "[https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200)",
+    imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200",
   };
 
   return (
     <>
       <Header />
       <main className="grow pt-24 pb-20 bg-white">
-
+        
         {/* Article Header */}
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
           <Link href="/blog" className="inline-flex items-center text-gray-500 hover:text-orange-500 mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to Blog
           </Link>
-
+          
           <div className="flex items-center gap-3 text-sm mb-6">
             <span className="bg-orange-100 text-orange-600 font-bold px-3 py-1 rounded-full uppercase tracking-wide">
               {post.category}
@@ -53,7 +54,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 <p className="font-semibold text-gray-900">{post.author}</p>
               </div>
             </div>
-
+            
             {/* Share Buttons */}
             <div className="flex gap-2">
               <button className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">
@@ -82,7 +83,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <p className="lead text-xl text-gray-600 mb-8">
             We are thrilled to announce our official launch in Lagos, bringing lightning-fast delivery to the heart of Nigeria&apos;s commercial capital. Starting today, residents across Victoria Island, Lekki, and Ikoyi can use the Scooty XP app to order exactly what they need, exactly when they need it.
           </p>
-
+          
           <h2 className="text-2xl font-bold text-blue-900 mt-10 mb-4">Why Lagos?</h2>
           <p className="text-gray-700 mb-6">
             Lagos is a city of incredible energy, but it&apos;s also a city where time is precious. We realized that local businesses were struggling to reach their customers efficiently due to logistical bottlenecks. Scooty XP was built to solve this exact problem, creating a hyper-local network that benefits everyone.

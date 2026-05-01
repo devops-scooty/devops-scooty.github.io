@@ -42,8 +42,8 @@ export default function RiderPage() {
   return (
     <>
       <Header />
-      <main className="flex-grow pt-32 pb-20">
-
+      <main className="grow pt-32 pb-20">
+        
         {/* Hero & Calculator Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1">
@@ -53,7 +53,7 @@ export default function RiderPage() {
             <p className="text-lg text-gray-600 mb-8">
               Join the Scooty XP fleet and deliver smiles across Lagos. You decide when, where, and how much you work.
             </p>
-
+            
             <div className="bg-orange-50 border border-orange-100 p-6 rounded-2xl">
               <h3 className="font-bold text-blue-900 mb-4">Calculate Your Earnings</h3>
               <div className="mb-4">
@@ -61,12 +61,12 @@ export default function RiderPage() {
                   <span>Hours per week</span>
                   <span className="text-orange-500 font-bold">{hours} hrs</span>
                 </label>
-                <input
-                  type="range"
-                  min="5"
-                  max="60"
-                  step="1"
-                  value={hours}
+                <input 
+                  type="range" 
+                  min="5" 
+                  max="60" 
+                  step="1" 
+                  value={hours} 
                   onChange={(e) => setHours(Number(e.target.value))}
                   className="w-full accent-orange-500"
                 />
@@ -98,11 +98,11 @@ export default function RiderPage() {
                   <p className="text-gray-600 text-sm">iOS or Android device with a data plan.</p>
                 </div>
               </li>
-                            <li className="flex gap-4">
+              <li className="flex gap-4">
                 <div className="bg-blue-50 p-3 rounded-full text-blue-900 h-min"><IdCard size={24} /></div>
                 <div>
                   <h4 className="font-bold text-gray-900">Rigorous Verification</h4>
-                  <p className="text-gray-600 text-sm">Valid ID, Driver's License, and dual photo uploads (your face + vehicle photo) required for trust and safety.</p>
+                  <p className="text-gray-600 text-sm">Valid ID, Driver&apos;s License, and dual photo uploads (your face + vehicle photo) required for trust and safety.</p>
                 </div>
               </li>
             </ul>
@@ -113,7 +113,7 @@ export default function RiderPage() {
         <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" id="apply">
           <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
             <h2 className="text-3xl font-heading font-bold mb-8 text-center text-blue-900">Apply Now</h2>
-
+            
             {isSuccess ? (
               <div className="bg-green-50 border border-green-200 text-green-800 p-6 rounded-xl text-center">
                 <h3 className="text-xl font-bold mb-2">Application Received!</h3>
