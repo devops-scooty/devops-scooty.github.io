@@ -1,2 +1,2 @@
-:HL["/scooty-xp-website/_next/static/chunks/14kzqpbidz39t.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"TxMEDnR_NEsp7R_zdLnlM"}
+:HL["/_next/static/chunks/0d.mb96kfur_w.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"zFD5hyfBQh95tQUJSTB2n"}

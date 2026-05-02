@@ -16,7 +16,7 @@ const TwitterIcon = ({ size = 24 }: { size?: number }) => (
 
 export function Footer() {
   return (
-    <footer className="bg-blue-900 text-white pt-16 pb-8">
+    <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
@@ -33,27 +33,27 @@ export function Footer() {
           </div>
           {/* Col 2: Company */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-orange-500">Company</h3>
+            <h3 className="font-bold text-lg mb-4 text-white">Company</h3>
             <ul className="space-y-3 text-blue-100">
-              <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors">Our Ecosystem</Link></li>
-              <li><Link href="/vendor" className="hover:text-white transition-colors">Become a Vendor</Link></li>
-              <li><Link href="/rider" className="hover:text-white transition-colors">Drive & Earn</Link></li>
+              <li><Link href="/about" className="hover:text-gray-300 transition-colors">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-gray-300 transition-colors">Our Ecosystem</Link></li>
+              <li><Link href="/vendor" className="hover:text-gray-300 transition-colors">Become a Vendor</Link></li>
+              <li><Link href="/rider" className="hover:text-gray-300 transition-colors">Drive & Earn</Link></li>
             </ul>
           </div>
           {/* Col 3: Support */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-orange-500">Support</h3>
+            <h3 className="font-bold text-lg mb-4 text-white">Support</h3>
             <ul className="space-y-3 text-blue-100">
-              <li><Link href="/faq" className="hover:text-white transition-colors">FAQs</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link href="/track" className="hover:text-white transition-colors">Track Order</Link></li>
-              <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
+              <li><Link href="/faq" className="hover:text-gray-300 transition-colors">FAQs</Link></li>
+              <li><Link href="/contact" className="hover:text-gray-300 transition-colors">Contact Us</Link></li>
+              <li><Link href="/track" className="hover:text-gray-300 transition-colors">Track Order</Link></li>
+              <li><Link href="/terms" className="hover:text-gray-300 transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
           {/* Col 4: Action */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-orange-500">Stay Updated</h3>
+            <h3 className="font-bold text-lg mb-4 text-white">Stay Updated</h3>
             <form className="flex space-x-2 mb-6" onSubmit={(e) => e.preventDefault()}>
               <Input type="email" placeholder="Email address" className="bg-white/10 border-white/20 text-white placeholder:text-blue-200" />
               <Button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white">Subscribe</Button>
