@@ -61,8 +61,8 @@ export function Header() {
               variant={isScrolled ? "default" : "secondary"}
               className={
                 isScrolled
-                  ? "bg-orange-500 hover:bg-orange-600 text-white"
-                  : "bg-white text-orange-500 hover:bg-gray-100"
+                    ? "bg-white shadow-md shadow-blue-900/10 py-3 text-blue-900"
+          : "bg-orange-500 py-5 text-white"
               }
             >
               Download App
