@@ -2,8 +2,22 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Package,  CheckCircle2, Navigation, Loader2 } from "lucide-react";
+import { Package, CheckCircle2, Navigation, Loader2 } from "lucide-react";
 
+export async function generateStaticParams() {
+  // Return an array of objects with the orderId values you want to pre-generate
+  // Example: if you have orders with IDs 1, 2, 3:
+  return [
+    { orderId: '1' },
+    { orderId: '2' },
+    { orderId: '3' },
+    // Add more order IDs as needed
+  ];
+
+  // Or, if you need to fetch order IDs from an external source:
+  // const orders = await fetch('your-api/orders').then(res => res.json());
+  // return orders.map(order => ({ orderId: order.id.toString() }));
+}
 export default function OrderTrackingPage({ params }: { params: { orderId: string } }) {
   const [status, setStatus] = useState<number>(0);
   const [eta, setEta] = useState<number>(45);
