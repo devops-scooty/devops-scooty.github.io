@@ -16,6 +16,11 @@ docs/
 # next.js
 /.next/
 /.vscode
+.vscode/settings.
+
+# deprecated
+scooty-xp-website/*
+/scooty-xp-website
 
 
 # production
