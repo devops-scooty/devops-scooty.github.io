@@ -20,6 +20,7 @@
                         primary: '#FF6B00',    // Scooty Orange
                         secondary: '#003366',  // Scooty Deep Blue
                         accent: '#F8F9FA',     // Light Grey
+                        footer: '#001f3f',      // Darker Blue for Footer
                     },
                     fontFamily: {
                         sans: ['Open Sans', 'sans-serif'],
@@ -73,7 +74,7 @@
                 <!-- Logo -->
                 <div class="flex items-center gap-3 cursor-pointer" onclick="navigate('home')">
                     <!-- SVG Logo -->
-                    <img src="myscooty_logo.svg" alt="Scooty XP Logo" class="h-10 w-auto">
+                    <img src="/website_src/imgs/logos/header_logo.svg" alt="Scooty XP Logo" class="h-[3rem] w-auto">
                     <span class="font-heading font-bold text-2xl tracking-tight hidden sm:block">SCOOTY <span class="text-primary">XP</span></span>
                 </div>
 
@@ -884,16 +885,16 @@
     </main>
 
     <!-- Global Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-16 mt-auto">
+    <footer class="bg-footer text-gray-300 py-12 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                 <!-- Brand & Contact -->
                 <div>
-                    <div class="flex items-center gap-3 mb-6 cursor-pointer" onclick="navigate('home')">
-                        <img src="myscooty_logo.svg" alt="Scooty XP Logo" class="h-8 w-auto">
-                        <span class="font-heading font-bold text-xl text-white tracking-tight">SCOOTY <span class="text-primary">XP</span></span>
+                    <div class="flex items-center mb-6 cursor-pointer" onclick="navigate('home')">
+                        <img src="/website_src/imgs/logos/footer_logo.svg" alt="Scooty XP Logo" class="h-32 w-auto">
+                      
                     </div>
-                    <p class="text-sm text-gray-400 mb-6">Fast. Elite. Efficient.<br>Your Everyday Delivery.</p>
+                   
                     <ul class="space-y-3 text-sm">
                         <li class="flex items-center gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-primary"></i> Victoria Island, Lagos, Nigeria</li>
                         <li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-primary"></i> +234 915 430 5583</li>
