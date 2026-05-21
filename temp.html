@@ -132,7 +132,6 @@
                         <a href="#" onclick="navigate('apps'); return false;" class="nav-link hover:text-primary transition" data-target="apps">Our Apps</a>
                         <a href="#" onclick="navigate('partner'); return false;" class="nav-link hover:text-primary transition" data-target="partner">Become a Partner</a>
                         <a href="#" onclick="navigate('faq'); return false;" class="nav-link hover:text-primary transition" data-target="faq">FAQs</a>
-                       
                     </div>
                     <!-- App Download Button -->
                     <div class="hidden md:flex items-center space-x-4">
@@ -154,7 +153,7 @@
                     <a href="#" onclick="navigate('apps'); return false;" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-800 hover:text-primary">Our Apps</a>
                     <a href="#" onclick="navigate('partner'); return false;" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-800 hover:text-primary">Become a Partner</a>
                     <a href="#" onclick="navigate('faq'); return false;" class="block px-3 py-2 rounded-md font-medium hover:bg-gray-800 hover:text-primary">FAQs</a>
-                     <div class="border-t border-gray-700 pt-4 flex flex-col gap-2">
+                    <div class="border-t border-gray-700 pt-4 flex flex-col gap-2">
                         <button onclick="navigate('download')" class="block w-full text-center px-5 py-2 rounded-full font-semibold bg-primary text-white flex items-center justify-center gap-2"><i data-lucide="smartphone" class="w-4 h-4"></i> Get the App</button>
                     </div>
                 </div>
@@ -524,7 +523,7 @@
                             </div>
                             <div class="bg-accent rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition">
                                 <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                                    <img class="rounded-full object-cover w-20 h-20" src="/website_src/imgs/team/Edward Stevenson.jpg" alt="" />
+                                    <img class="rounded-full object-cover w-20 h-20" src="/website_src/imgs/team/edward_stevenson.jpg" alt="" />
                                 </div>
                                 <h3 class="font-heading font-bold text-xl text-secondary mb-2">Edward Stevenson</h3>
                                 <p class="text-primary font-semibold text-sm mb-4">Managing Director</p>
@@ -677,557 +676,204 @@
                 </section>
             </div>
             <!-- ================= PAGE: VENDOR ONBOARDING FORM ================= -->
+            <!--
+                ============================================================
+                SCOOTY XP — VENDOR ONBOARDING PAGE REPLACEMENT
+                ============================================================
+                INSTRUCTIONS:
+                Replace the entire <div id="page-onboarding" ...> block in
+                your main HTML file with the code below.
+
+                The PDF download link points to:
+                    /website_src/docs/Scooty_Vendor_Onboarding_Form.pdf
+                Update this path to wherever you host the actual PDF.
+
+                Submission email: contact@myscooty.ng  (matches site footer)
+                ============================================================
+                -->
+            <!-- ================= PAGE: VENDOR ONBOARDING FORM ================= -->
             <div id="page-onboarding" class="page-view">
-                <section class="py-16 lg:py-20 bg-accent min-h-screen">
-                    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="text-center mb-10">
-                            <button onclick="navigate('partner')" class="inline-flex items-center gap-2 text-gray-500 hover:text-secondary text-sm font-medium mb-6 transition">
-                                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Partner Info </button>
-                        </div>
-                        <!-- ONBOARDING FORM (embedded) -->
-                        <style>
-                            .ob * {
-                                box-sizing: border-box;
-                            }
-
-                            .ob {
-                                --scooty-orange: #E8500A;
-                                --scooty-orange-light: #FDF0EA;
-                                --scooty-orange-mid: #F4784A;
-                                --scooty-navy: #0D2B55;
-                                --scooty-navy-mid: #1A3F72;
-                            }
-
-                            .ob .ob-hero {
-                                background: var(--scooty-navy);
-                                border-radius: 16px;
-                                padding: 2rem 2rem 1.5rem;
-                                margin-bottom: 2rem;
-                                display: flex;
-                                align-items: center;
-                                gap: 1.5rem;
-                            }
-
-                            .ob .ob-hero-logo {
-                                width: 56px;
-                                height: 56px;
-                                border-radius: 14px;
-                                background: var(--scooty-orange);
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                flex-shrink: 0;
-                            }
-
-                            .ob .ob-hero-logo i {
-                                font-size: 28px;
-                                color: #fff;
-                            }
-
-                            .ob .ob-hero-text h1 {
-                                font-size: 20px;
-                                font-weight: 600;
-                                color: #fff;
-                                margin-bottom: 4px;
-                                font-family: inherit;
-                            }
-
-                            .ob .ob-hero-text p {
-                                font-size: 13px;
-                                color: rgba(255, 255, 255, 0.55);
-                                line-height: 1.5;
-                            }
-
-                            .ob .ob-badge {
-                                margin-left: auto;
-                                flex-shrink: 0;
-                                background: rgba(232, 80, 10, 0.18);
-                                border: 0.5px solid rgba(232, 80, 10, 0.4);
-                                color: #F4784A;
-                                font-size: 11px;
-                                font-weight: 500;
-                                padding: 4px 10px;
-                                border-radius: 20px;
-                                letter-spacing: 0.04em;
-                            }
-
-                            .ob .ob-prog-wrap {
-                                margin-bottom: 1.5rem;
-                            }
-
-                            .ob .ob-prog-steps {
-                                display: flex;
-                                gap: 4px;
-                                margin-bottom: 8px;
-                            }
-
-                            .ob .ob-prog-step {
-                                flex: 1;
-                                height: 3px;
-                                border-radius: 2px;
-                                background: #e5e7eb;
-                                transition: background 0.3s;
-                            }
-
-                            .ob .ob-prog-step.done {
-                                background: var(--scooty-orange);
-                            }
-
-                            .ob .ob-prog-step.active {
-                                background: var(--scooty-orange-mid);
-                            }
-
-                            .ob .ob-prog-label {
-                                font-size: 12px;
-                                color: #6b7280;
-                                display: flex;
-                                justify-content: space-between;
-                            }
-
-                            .ob .ob-card {
-                                background: #fff;
-                                border: 0.5px solid #e5e7eb;
-                                border-radius: 16px;
-                                padding: 1.5rem;
-                                margin-bottom: 1rem;
-                                display: none;
-                            }
-
-                            .ob .ob-card.active {
-                                display: block;
-                            }
-
-                            .ob .ob-sec-header {
-                                display: flex;
-                                align-items: center;
-                                gap: 10px;
-                                margin-bottom: 1.25rem;
-                                padding-bottom: 1rem;
-                                border-bottom: 0.5px solid #e5e7eb;
-                            }
-
-                            .ob .ob-sec-num {
-                                width: 28px;
-                                height: 28px;
-                                border-radius: 50%;
-                                background: var(--scooty-orange-light);
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                font-size: 12px;
-                                font-weight: 500;
-                                color: var(--scooty-orange);
-                                flex-shrink: 0;
-                            }
-
-                            .ob .ob-sec-title {
-                                font-size: 15px;
-                                font-weight: 600;
-                                color: #111827;
-                            }
-
-                            .ob .ob-sec-sub {
-                                font-size: 12px;
-                                color: #6b7280;
-                                margin-top: 1px;
-                            }
-
-                            .ob .ob-grid {
-                                display: grid;
-                                grid-template-columns: 1fr 1fr;
-                                gap: 12px;
-                            }
-
-                            .ob .ob-grid.full {
-                                grid-template-columns: 1fr;
-                            }
-
-                            .ob .ob-field {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 5px;
-                            }
-
-                            .ob .ob-field.span2 {
-                                grid-column: span 2;
-                            }
-
-                            .ob label.ob-label {
-                                font-size: 12px;
-                                color: #6b7280;
-                                font-weight: 500;
-                            }
-
-                            .ob label.ob-label .req {
-                                color: var(--scooty-orange);
-                                margin-left: 2px;
-                            }
-
-                            .ob input[type="text"],
-                            .ob input[type="email"],
-                            .ob input[type="tel"],
-                            .ob input[type="date"],
-                            .ob input[type="number"],
-                            .ob select,
-                            .ob textarea {
-                                width: 100%;
-                                font-size: 14px;
-                                background: #f9fafb;
-                                border: 0.5px solid #d1d5db;
-                                border-radius: 10px;
-                                padding: 8px 10px;
-                                color: #111827;
-                                transition: border-color 0.2s;
-                                outline: none;
-                                font-family: inherit;
-                            }
-
-                            .ob input:focus,
-                            .ob select:focus,
-                            .ob textarea:focus {
-                                border-color: var(--scooty-orange);
-                                box-shadow: 0 0 0 3px rgba(232, 80, 10, 0.12);
-                            }
-
-                            .ob textarea {
-                                resize: vertical;
-                                min-height: 80px;
-                            }
-
-                            .ob .ob-check-group {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 8px;
-                            }
-
-                            .ob .ob-check-item {
-                                display: flex;
-                                align-items: center;
-                                gap: 8px;
-                                padding: 8px 10px;
-                                border: 0.5px solid #e5e7eb;
-                                border-radius: 10px;
-                                cursor: pointer;
-                                transition: border-color 0.2s, background 0.2s;
-                                background: #f9fafb;
-                            }
-
-                            .ob .ob-check-item:hover {
-                                border-color: var(--scooty-orange);
-                                background: var(--scooty-orange-light);
-                            }
-
-                            .ob .ob-check-item input[type="checkbox"],
-                            .ob .ob-check-item input[type="radio"] {
-                                width: auto;
-                                accent-color: var(--scooty-orange);
-                                cursor: pointer;
-                            }
-
-                            .ob .ob-check-item span {
-                                cursor: pointer;
-                                font-size: 13px;
-                                color: #111827;
-                            }
-
-                            .ob .ob-radio-grid {
-                                display: grid;
-                                grid-template-columns: 1fr 1fr;
-                                gap: 8px;
-                            }
-
-                            .ob .ob-upload {
-                                border: 1px dashed #d1d5db;
-                                border-radius: 10px;
-                                padding: 1.25rem;
-                                text-align: center;
-                                background: #f9fafb;
-                                cursor: pointer;
-                                transition: border-color 0.2s;
-                            }
-
-                            .ob .ob-upload:hover {
-                                border-color: var(--scooty-orange);
-                            }
-
-                            .ob .ob-upload i {
-                                font-size: 24px;
-                                color: #9ca3af;
-                                display: block;
-                                margin-bottom: 6px;
-                            }
-
-                            .ob .ob-upload p {
-                                font-size: 12px;
-                                color: #6b7280;
-                            }
-
-                            .ob .ob-upload strong {
-                                color: var(--scooty-orange);
-                            }
-
-                            .ob .ob-nav {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                margin-top: 1.25rem;
-                                padding-top: 1rem;
-                                border-top: 0.5px solid #e5e7eb;
-                            }
-
-                            .ob .ob-btn {
-                                padding: 9px 20px;
-                                border-radius: 10px;
-                                font-size: 13px;
-                                font-weight: 500;
-                                cursor: pointer;
-                                font-family: inherit;
-                                transition: all 0.15s;
-                                border: 0.5px solid #d1d5db;
-                                background: #f3f4f6;
-                                color: #111827;
-                                display: flex;
-                                align-items: center;
-                                gap: 6px;
-                            }
-
-                            .ob .ob-btn:hover {
-                                background: #e5e7eb;
-                            }
-
-                            .ob .ob-btn.primary {
-                                background: var(--scooty-orange);
-                                border-color: var(--scooty-orange);
-                                color: #fff;
-                            }
-
-                            .ob .ob-btn.primary:hover {
-                                background: #C94308;
-                                border-color: #C94308;
-                            }
-
-                            .ob .ob-info {
-                                background: var(--scooty-orange-light);
-                                border: 0.5px solid rgba(232, 80, 10, 0.25);
-                                border-radius: 10px;
-                                padding: 10px 12px;
-                                font-size: 12px;
-                                color: #6b7280;
-                                display: flex;
-                                gap: 8px;
-                                align-items: flex-start;
-                                margin-bottom: 12px;
-                            }
-
-                            .ob .ob-check-list-item {
-                                display: flex;
-                                align-items: center;
-                                gap: 10px;
-                                padding: 10px 0;
-                                border-bottom: 0.5px solid #e5e7eb;
-                                font-size: 13px;
-                                color: #111827;
-                            }
-
-                            .ob .ob-check-list-item:last-child {
-                                border-bottom: none;
-                            }
-
-                            .ob .ob-success {
-                                text-align: center;
-                                padding: 2rem 1rem;
-                                display: none;
-                            }
-
-                            .ob .ob-success .ob-tick {
-                                width: 64px;
-                                height: 64px;
-                                border-radius: 50%;
-                                background: #EAF3DE;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                margin: 0 auto 1rem;
-                            }
-
-                            .ob .ob-success h2 {
-                                font-size: 20px;
-                                font-weight: 600;
-                                color: #111827;
-                                margin-bottom: 6px;
-                            }
-
-                            .ob .ob-success p {
-                                font-size: 13px;
-                                color: #6b7280;
-                                max-width: 340px;
-                                margin: 0 auto;
-                                line-height: 1.6;
-                            }
-                        </style>
-                        <div class="ob">
-                            <!-- Hero -->
-                            <div class="ob-hero">
-                                <div class="ob-hero-logo"><i data-lucide="bike" style="width:28px;height:28px;color:#fff;"></i></div>
-                                <div class="ob-hero-text">
-                                    <h1>Partner Onboarding Form</h1>
-                                    <p>App &amp; Dedicated Rider Service — Fast. Elite. Efficient.</p>
+                <!-- Hero Banner -->
+                <section class="py-20 lg:py-28 gradient-bg hero-shape text-white">
+                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <span class="inline-block bg-primary/20 border border-primary/40 text-orange-300 font-semibold text-sm px-4 py-1.5 rounded-full mb-6 uppercase tracking-wide"> Partner Onboarding Form </span>
+                        <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"> Ready to Join <span class="text-primary">Scooty XP?</span>
+                        </h1>
+                        <p class="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto mb-4"> Download the vendor onboarding form, fill it in, and email it back to us with your documents. Our team will have you live on the platform within 2–3 business days. </p>
+                    </div>
+                </section>
+                <!-- Main Content -->
+                <section class="py-16 lg:py-20 bg-accent">
+                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <!-- Back link -->
+                        <button onclick="navigate('partner')" class="inline-flex items-center gap-2 text-gray-500 hover:text-secondary text-sm font-medium mb-10 transition">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Partner Info </button>
+                        <!-- ── STEP CARDS ─────────────────────────────────────────── -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                            <!-- Step 1 -->
+                            <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm flex flex-col">
+                                <div class="flex items-center gap-3 mb-5">
+                                    <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-lg flex-shrink-0">1</div>
+                                    <h3 class="font-heading font-bold text-secondary text-lg">Download the Form</h3>
                                 </div>
-                                <span class="ob-badge">SCOOTY XP</span>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow"> Click the button below to download the official Scooty XP Partner Onboarding Form as a PDF. Print it out or fill it in digitally on your device. </p>
+                                <a href="/website_src/docs/Scooty_Vendor_Onboarding_Form.pdf" download="Scooty_XP_Partner_Onboarding_Form.pdf" class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-orange-600 text-white font-semibold px-5 py-3 rounded-xl text-sm transition shadow-md shadow-primary/20 w-full">
+                                    <i data-lucide="download" class="w-4 h-4"></i> Download PDF Form </a>
                             </div>
-                            <!-- Progress -->
-                            <div class="ob-prog-wrap">
-                                <div class="ob-prog-steps" id="obProgSteps"></div>
-                                <div class="ob-prog-label">
-                                    <span id="obStepLabel">Section 1 of 5</span>
-                                    <span id="obStepName">Business information</span>
+                            <!-- Step 2 -->
+                            <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm flex flex-col">
+                                <div class="flex items-center gap-3 mb-5">
+                                    <div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-heading font-bold text-lg flex-shrink-0">2</div>
+                                    <h3 class="font-heading font-bold text-secondary text-lg">Complete the Form</h3>
+                                </div>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4 flex-grow"> Fill in all sections carefully. Gather the required supporting documents listed below. Incomplete submissions may delay your onboarding. </p>
+                                <div class="bg-accent rounded-xl px-4 py-3 text-xs text-gray-500 leading-relaxed">
+                                    <span class="font-semibold text-secondary">Tip:</span> You can fill the PDF digitally using Adobe Acrobat, Preview (Mac), or any free PDF viewer before printing or saving.
                                 </div>
                             </div>
-                            <!-- Section 1 -->
-                            <div class="ob-card active" data-section="0">
-                                <div class="ob-sec-header">
-                                    <div class="ob-sec-num">1</div>
-                                    <div>
-                                        <div class="ob-sec-title">Business information</div>
-                                        <div class="ob-sec-sub">Tell us about your business</div>
-                                    </div>
+                            <!-- Step 3 -->
+                            <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm flex flex-col">
+                                <div class="flex items-center gap-3 mb-5">
+                                    <div class="w-10 h-10 rounded-full bg-green-600 text-white flex items-center justify-center font-heading font-bold text-lg flex-shrink-0">3</div>
+                                    <h3 class="font-heading font-bold text-secondary text-lg">Submit via Email</h3>
                                 </div>
-                                <div class="ob-grid">
-                                    <div class="ob-field span2"><label class="ob-label">Business name <span class="req">*</span></label><input type="text" placeholder="e.g. Mama's Kitchen Ltd"></div>
-                                    <div class="ob-field span2"><label class="ob-label">Business type <span class="req">*</span></label><select>
-                                            <option value="">Select business type</option>
-                                            <option>Restaurant</option>
-                                            <option>Supermarket</option>
-                                            <option>Pharmacy</option>
-                                            <option>Retail outlet</option>
-                                            <option>Other</option>
-                                        </select></div>
-                                    <div class="ob-field span2"><label class="ob-label">Registered address <span class="req">*</span></label><input type="text" placeholder="Full registered business address"></div>
-                                    <div class="ob-field span2"><label class="ob-label">Owner / CEO / Director name <span class="req">*</span></label><input type="text" placeholder="Full legal name"></div>
-                                    <div class="ob-field"><label class="ob-label">Owner / CEO contact number <span class="req">*</span></label><input type="tel" placeholder="+234 000 000 0000"></div>
-                                    <div class="ob-field"><label class="ob-label">Owner / CEO email address <span class="req">*</span></label><input type="email" placeholder="owner@business.com"></div>
-                                    <div class="ob-field span2"><label class="ob-label">Contact person (daily liaison) <span class="req">*</span></label><input type="text" placeholder="Full name"></div>
-                                    <div class="ob-field"><label class="ob-label">Contact person phone</label><input type="tel" placeholder="+234 000 000 0000"></div>
-                                    <div class="ob-field"><label class="ob-label">Contact person email</label><input type="email" placeholder="contact@business.com"></div>
-                                    <div class="ob-field"><label class="ob-label">Days operating <span class="req">*</span></label><input type="text" placeholder="e.g. Mon – Sat"></div>
-                                    <div class="ob-field"><label class="ob-label">Daily operating hours <span class="req">*</span></label><input type="text" placeholder="e.g. 8:00 AM – 10:00 PM"></div>
-                                </div>
-                                <div class="ob-nav"><span></span><button class="ob-btn primary" onclick="obNext()">Next <i data-lucide="arrow-right" style="width:14px;height:14px;display:inline;"></i></button></div>
-                            </div>
-                            <!-- Section 2: Service Type -->
-                            <div class="ob-card" data-section="1">
-                                <div class="ob-sec-header">
-                                    <div class="ob-sec-num">2</div>
-                                    <div>
-                                        <div class="ob-sec-title">Service type</div>
-                                        <div class="ob-sec-sub">Choose the services you need</div>
-                                    </div>
-                                </div>
-                                <div class="ob-grid full">
-                                    <div class="ob-field"><label class="ob-label">Select your preferred service(s) <span class="req">*</span></label>
-                                        <div class="ob-check-group" style="margin-top:4px;">
-                                            <label class="ob-check-item"><input type="checkbox" name="obService" value="app"><span>App-based deliveries</span></label>
-                                            <label class="ob-check-item"><input type="checkbox" name="obService" value="dedicated"><span>Dedicated rider service</span></label>
-                                            <label class="ob-check-item"><input type="checkbox" name="obService" value="both"><span>Both</span></label>
-                                        </div>
-                                    </div>
-                                    <div class="ob-field" style="margin-top:8px;"><label class="ob-label">Preferred start date</label><input type="date"></div>
-                                </div>
-                                <div class="ob-nav"><button class="ob-btn" onclick="obPrev()"><i data-lucide="arrow-left" style="width:14px;height:14px;display:inline;"></i> Back</button><button class="ob-btn primary" onclick="obNext()">Next <i data-lucide="arrow-right" style="width:14px;height:14px;display:inline;"></i></button></div>
-                            </div>
-                            <!-- Section 3: Dedicated Rider -->
-                            <div class="ob-card" data-section="2">
-                                <div class="ob-sec-header">
-                                    <div class="ob-sec-num">3</div>
-                                    <div>
-                                        <div class="ob-sec-title">Dedicated rider service</div>
-                                        <div class="ob-sec-sub">Complete if you selected dedicated rider or both</div>
-                                    </div>
-                                </div>
-                                <div class="ob-info"><i data-lucide="info" style="width:15px;height:15px;flex-shrink:0;margin-top:1px;color:#E8500A;"></i> Flexible minimum — starting at 5 deliveries per rider per day for small vendors. Adjustable as your business grows.</div>
-                                <div class="ob-grid">
-                                    <div class="ob-field"><label class="ob-label">Number of riders requested</label><input type="number" placeholder="e.g. 2" min="1"></div>
-                                    <div class="ob-field"><label class="ob-label">Expected daily order volume</label><input type="number" placeholder="e.g. 20"></div>
-                                    <div class="ob-field span2"><label class="ob-label">Preferred delivery zones</label><input type="text" placeholder="e.g. Lekki, Ikoyi, Victoria Island"></div>
-                                    <div class="ob-field span2"><label class="ob-label">Delivery timing range</label><input type="text" placeholder="e.g. 9:00 AM – 9:00 PM"></div>
-                                </div>
-                                <div class="ob-nav"><button class="ob-btn" onclick="obPrev()"><i data-lucide="arrow-left" style="width:14px;height:14px;display:inline;"></i> Back</button><button class="ob-btn primary" onclick="obNext()">Next <i data-lucide="arrow-right" style="width:14px;height:14px;display:inline;"></i></button></div>
-                            </div>
-                            <!-- Section 4: Order & Delivery -->
-                            <div class="ob-card" data-section="3">
-                                <div class="ob-sec-header">
-                                    <div class="ob-sec-num">4</div>
-                                    <div>
-                                        <div class="ob-sec-title">Order &amp; delivery process</div>
-                                        <div class="ob-sec-sub">How you handle and manage orders</div>
-                                    </div>
-                                </div>
-                                <div class="ob-grid full">
-                                    <div class="ob-field"><label class="ob-label">Order handling method <span class="req">*</span></label>
-                                        <div class="ob-radio-grid" style="margin-top:4px;">
-                                            <label class="ob-check-item"><input type="radio" name="obOrder" value="app"><span>Via Scooty app</span></label>
-                                            <label class="ob-check-item"><input type="radio" name="obOrder" value="call"><span>Direct call</span></label>
-                                            <label class="ob-check-item"><input type="radio" name="obOrder" value="both"><span>Both</span></label>
-                                        </div>
-                                    </div>
-                                    <div class="ob-field" style="margin-top:8px;"><label class="ob-label">Average delivery time expectation</label><input type="text" placeholder="e.g. 30 – 45 minutes"></div>
-                                    <div class="ob-field"><label class="ob-label">Escalation / dispatch contact</label><input type="text" placeholder="Name and phone number"></div>
-                                </div>
-                                <div class="ob-nav"><button class="ob-btn" onclick="obPrev()"><i data-lucide="arrow-left" style="width:14px;height:14px;display:inline;"></i> Back</button><button class="ob-btn primary" onclick="obNext()">Next <i data-lucide="arrow-right" style="width:14px;height:14px;display:inline;"></i></button></div>
-                            </div>
-                           
-                            <!-- Section 8: Agreement & Documents -->
-                            <div class="ob-card" data-section="4">
-                                <div class="ob-sec-header">
-                                    <div class="ob-sec-num">5</div>
-                                    <div>
-                                        <div class="ob-sec-title">Agreement &amp; confirmation</div>
-                                       
-                                    </div>
-                                </div>
-                                <p style="font-size:13px;color:#6b7280;margin-bottom:1rem;line-height:1.6;">Please confirm all required documents are ready to be submitted along with this form.</p>
-                                
-                                
-                                <div class="ob-nav"><button class="ob-btn" onclick="obPrev()"><i data-lucide="arrow-left" style="width:14px;height:14px;display:inline;"></i> Back</button><button class="ob-btn primary" onclick="obSubmit()"><i data-lucide="send" style="width:14px;height:14px;display:inline;"></i> Submit application</button></div>
-                            </div>
-                            <!-- Success Screen -->
-                            <div class="ob-success" id="obSuccess">
-                                <div class="ob-tick"><i data-lucide="check" style="width:32px;height:32px;color:#3B6D11;"></i></div>
-                                <h2>Application submitted!</h2>
-                                <p>Thank you for partnering with Scooty XP. Our team will review your details and reach out within 2–3 business days to complete your onboarding.</p>
-                                <p style="margin-top:12px;font-size:12px;color:#9ca3af;">Scooty Xperience Ltd., No. 16 Crown Court Estate, Orunbe Close, Off Onigefon Street, Off Palace Road, Oniru, Lagos, Nigeria.</p>
-                                <button onclick="navigate('partner')" style="margin-top:20px;" class="ob-btn primary">Back to Partner Info</button>
+                                <p class="text-gray-500 text-sm leading-relaxed mb-4 flex-grow"> Email your completed form and all supporting documents to us. We'll review your application and respond within <strong class="text-secondary">2–3 business days</strong>. </p>
+                                <a href="mailto:contact@myscooty.ng?subject=Vendor%20Onboarding%20Application&body=Hi%20Scooty%20XP%20Team%2C%0A%0APlease%20find%20attached%20my%20completed%20Partner%20Onboarding%20Form%20and%20supporting%20documents.%0A%0ABusiness%20Name%3A%20%5BYour%20Business%20Name%5D%0A%0AKind%20regards%2C" class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-3 rounded-xl text-sm transition shadow-md shadow-green-600/20 w-full">
+                                    <i data-lucide="mail" class="w-4 h-4"></i> Open Email to Submit </a>
                             </div>
                         </div>
-                        <!-- End onboarding form -->
-                        <script>
-                                (function () {
-                                    const obSections = document.querySelectorAll('#page-onboarding .ob-card');
-                                    const obNames = ['Business information', 'Service type', 'Dedicated rider service', 'Order & delivery', 'Agreement & confirmation'];
-                                    let obCurrent = 0;
-                                    function obBuildProgress() {
-                                        const ps = document.getElementById('obProgSteps');
-                                        ps.innerHTML = '';
-                                        for (let i = 0; i < 5; i++) { const d = document.createElement('div'); d.className = 'ob-prog-step' + (i < obCurrent ? ' done' : i === obCurrent ? ' active' : ''); ps.appendChild(d); }
-                                        document.getElementById('obStepLabel').textContent = 'Section ' + (obCurrent + 1) + ' of 5';
-                                        document.getElementById('obStepName').textContent = obNames[obCurrent];
-                                    }
-                                    function obShow(idx) { obSections.forEach((s, i) => s.classList.toggle('active', i === idx)); obBuildProgress(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-                                    window.obNext = function () { if (obCurrent < 7) { obCurrent++; obShow(obCurrent); } };
-                                    window.obPrev = function () { if (obCurrent > 0) { obCurrent--; obShow(obCurrent); } };
-                                    window.obSubmit = function () {
-                                        obSections.forEach(s => s.classList.remove('active'));
-                                        document.getElementById('obSuccess').style.display = 'block';
-                                        document.getElementById('obProgSteps').parentElement.style.display = 'none';
-                                        document.querySelector('.ob .ob-hero').style.display = 'none';
-                                        lucide.createIcons();
-                                    };
-                                    obBuildProgress();
-                                })();
-                        </script>
+                        <!-- ── SUBMISSION INSTRUCTIONS ────────────────────────────── -->
+                        <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden mb-10">
+                            <div class="bg-secondary px-8 py-5 flex items-center gap-3">
+                                <i data-lucide="send" class="w-5 h-5 text-primary"></i>
+                                <h2 class="font-heading font-bold text-white text-xl">Email Submission Instructions</h2>
+                            </div>
+                            <div class="px-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <!-- Send To -->
+                                <div>
+                                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Send your email to</p>
+                                    <a href="mailto:contact@myscooty.ng" class="inline-flex items-center gap-2 text-primary font-heading font-bold text-xl hover:underline">
+                                        <i data-lucide="mail" class="w-5 h-5"></i> contact@myscooty.ng </a>
+                                    <p class="text-gray-500 text-sm mt-3 leading-relaxed"> Use the subject line below so our team can process your application quickly. </p>
+                                    <div class="mt-3 bg-accent rounded-xl px-4 py-3 flex items-center justify-between gap-3 border border-gray-200">
+                                        <span class="text-sm text-gray-600 font-mono">Vendor Onboarding Application — [Your Business Name]</span>
+                                        <button onclick="navigator.clipboard.writeText('Vendor Onboarding Application — ' + (document.getElementById('biz-name-input').value || '[Your Business Name]')).then(()=>{ this.innerText='Copied!'; setTimeout(()=>this.innerHTML='<i data-lucide=\'copy\' style=\'width:14px;height:14px;display:inline-block;vertical-align:middle\'></i>', 1500); lucide.createIcons(); })" class="text-xs text-primary hover:text-orange-600 font-medium flex-shrink-0 flex items-center gap-1 transition">
+                                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Attachments required -->
+                                <div>
+                                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Attach to your email</p>
+                                    <ul class="space-y-2.5">
+                                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i> Completed Partner Onboarding Form (PDF)
+                                        </li>
+                                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i> Business registration document (CAC)
+                                        </li>
+                                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i> Valid ID of owner or contact person
+                                        </li>
+                                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i> Company logo (high-resolution JPEG or PNG)
+                                        </li>
+                                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i> 2–3 storefront photos (exterior &amp; interior)
+                                        </li>
+                                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i> Menu or product catalog (PDF, Excel, or images)
+                                        </li>
+                                        <li class="flex items-start gap-2.5 text-sm text-gray-600">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5"></i> Signed Vendor Service Agreement
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- What happens next -->
+                            <div class="border-t border-gray-100 bg-accent px-8 py-5">
+                                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">What happens after you submit</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">1</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">Our team reviews your application within <strong class="text-secondary">2–3 business days</strong>.</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">2</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">We email you a confirmation or follow up if anything is missing.</p>
+                                    </div>
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">3</div>
+                                        <p class="text-sm text-gray-600 leading-relaxed">Once approved, your store is set up and <strong class="text-secondary">you go live</strong> on the Scooty XP platform.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ── QUICK REFERENCE: FORM SECTIONS ────────────────────── -->
+                        <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden mb-10">
+                            <div class="px-8 py-6 border-b border-gray-100">
+                                <h2 class="font-heading font-bold text-secondary text-xl">What the Form Covers</h2>
+                                <p class="text-gray-500 text-sm mt-1">8 sections — takes about 10 minutes to complete.</p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
+                                <div class="px-6 py-5">
+                                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Section 1</p>
+                                    <p class="font-heading font-semibold text-secondary text-sm mb-1">Business Information</p>
+                                    <p class="text-xs text-gray-500">Name, address, owner details, operating hours</p>
+                                </div>
+                                <div class="px-6 py-5">
+                                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Section 2</p>
+                                    <p class="font-heading font-semibold text-secondary text-sm mb-1">Service Type</p>
+                                    <p class="text-xs text-gray-500">App deliveries, dedicated rider, or both</p>
+                                </div>
+                                <div class="px-6 py-5">
+                                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Section 3</p>
+                                    <p class="font-heading font-semibold text-secondary text-sm mb-1">Dedicated Rider</p>
+                                    <p class="text-xs text-gray-500">Rider count, delivery zones, timing, volume</p>
+                                </div>
+                                <div class="px-6 py-5">
+                                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Section 4</p>
+                                    <p class="font-heading font-semibold text-secondary text-sm mb-1">Order & Delivery</p>
+                                    <p class="text-xs text-gray-500">Order handling method, escalation contact</p>
+                                </div>
+                                <div class="px-6 py-5 border-t border-gray-100">
+                                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Section 5</p>
+                                    <p class="font-heading font-semibold text-secondary text-sm mb-1">Payment & Billing</p>
+                                    <p class="text-xs text-gray-500">Bank name, account details, billing contact</p>
+                                </div>
+                                <div class="px-6 py-5 border-t border-gray-100">
+                                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Section 6</p>
+                                    <p class="font-heading font-semibold text-secondary text-sm mb-1">Brand & Visibility</p>
+                                    <p class="text-xs text-gray-500">Logo, storefront images, business description</p>
+                                </div>
+                                <div class="px-6 py-5 border-t border-gray-100">
+                                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Section 7</p>
+                                    <p class="font-heading font-semibold text-secondary text-sm mb-1">Menu / Catalog</p>
+                                    <p class="text-xs text-gray-500">Item names, descriptions, images, prices (₦)</p>
+                                </div>
+                                <div class="px-6 py-5 border-t border-gray-100">
+                                    <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Section 8</p>
+                                    <p class="font-heading font-semibold text-secondary text-sm mb-1">Agreement</p>
+                                    <p class="text-xs text-gray-500">Authorized signature, position, and date</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ── NEED HELP CTA ──────────────────────────────────────── -->
+                        <div class="bg-gradient-to-r from-secondary to-blue-900 rounded-3xl p-10 text-center text-white">
+                            <h2 class="font-heading text-2xl font-bold mb-3">Need help with your application?</h2>
+                            <p class="text-blue-200 mb-8 max-w-lg mx-auto"> Our vendor support team is available to walk you through the form, answer questions, or assist with document requirements. </p>
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                                <a href="mailto:contact@myscooty.ng" class="inline-flex items-center gap-2 bg-primary hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-full text-base transition shadow-lg shadow-primary/30">
+                                    <i data-lucide="mail" class="w-5 h-5"></i> Email Us </a>
+                                <a href="tel:+2349154305583" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-3.5 rounded-full text-base transition border border-white/20">
+                                    <i data-lucide="phone" class="w-5 h-5"></i> +234 915 430 5583 </a>
+                            </div>
+                            <p class="mt-6 text-blue-300 text-sm"> Or download the form and drop it off in person at our Victoria Island office. </p>
+                        </div>
                     </div>
                 </section>
             </div>
+            <!-- ================= END: VENDOR ONBOARDING FORM ================= -->
             <!-- ================= PAGE: FAQS ================= -->
             <div id="page-faq" class="page-view">
                 <section class="py-16 lg:py-24 bg-white">
@@ -1587,7 +1233,6 @@
                     </div>
                 </section>
             </div>
-            
             <!-- ================= PAGE: HELP CENTER ================= -->
             <div id="page-help" class="page-view">
                 <section class="py-16 lg:py-24 bg-white">
@@ -1944,7 +1589,6 @@
                             <button onclick="showPolicy('privacy')" class="policy-tab px-6 py-4 font-medium text-gray-700 border-b-2 border-transparent hover:border-orange-600 whitespace-nowrap transition" data-tab="privacy"> Privacy Policy </button>
                             <button onclick="showPolicy('late-delivery')" class="policy-tab px-6 py-4 font-medium text-gray-700 border-b-2 border-transparent hover:border-orange-600 whitespace-nowrap transition" data-tab="late-delivery"> Late Delivery Policy </button>
                             <button onclick="showPolicy('refund')" class="policy-tab px-6 py-4 font-medium text-gray-700 border-b-2 border-transparent hover:border-orange-600 whitespace-nowrap transition" data-tab="refund"> Refund &amp; Cancellation </button>
-                           
                         </div>
                     </div>
                 </div>
@@ -2191,7 +1835,6 @@
                         </div>
                     </section>
                 </div>
-              
             </div>
             </div>
             <!-- ================= PAGE: LOGIN (redirects to app) ================= -->
@@ -2284,7 +1927,6 @@
                             <li><a href="#" onclick="navigate('apps'); return false;" class="hover:text-primary transition">Our Apps</a></li>
                             <li><a href="#" onclick="navigate('partner'); return false;" class="hover:text-primary transition">Become a Partner</a></li>
                             <li><a href="#" onclick="navigate('faq'); return false;" class="hover:text-primary transition">FAQs</a></li>
-                           
                         </ul>
                     </div>
                     <!-- Support & Legal -->
