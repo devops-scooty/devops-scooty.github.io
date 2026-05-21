@@ -676,22 +676,6 @@
                 </section>
             </div>
             <!-- ================= PAGE: VENDOR ONBOARDING FORM ================= -->
-            <!--
-                ============================================================
-                SCOOTY XP — VENDOR ONBOARDING PAGE REPLACEMENT
-                ============================================================
-                INSTRUCTIONS:
-                Replace the entire <div id="page-onboarding" ...> block in
-                your main HTML file with the code below.
-
-                The PDF download link points to:
-                    /website_src/docs/Scooty_Vendor_Onboarding_Form.pdf
-                Update this path to wherever you host the actual PDF.
-
-                Submission email: contact@myscooty.ng  (matches site footer)
-                ============================================================
-                -->
-            <!-- ================= PAGE: VENDOR ONBOARDING FORM ================= -->
             <div id="page-onboarding" class="page-view">
                 <!-- Hero Banner -->
                 <section class="py-20 lg:py-28 gradient-bg hero-shape text-white">
@@ -873,7 +857,6 @@
                     </div>
                 </section>
             </div>
-            <!-- ================= END: VENDOR ONBOARDING FORM ================= -->
             <!-- ================= PAGE: FAQS ================= -->
             <div id="page-faq" class="page-view">
                 <section class="py-16 lg:py-24 bg-white">
@@ -1228,137 +1211,6 @@
                                         <p class="text-gray-600 pb-6">See our Safety & Insurance Policy for full details on coverage limits and claim procedures.</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <!-- ================= PAGE: HELP CENTER ================= -->
-            <div id="page-help" class="page-view">
-                <section class="py-16 lg:py-24 bg-white">
-                    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="text-center mb-16">
-                            <h1 class="font-heading text-4xl md:text-5xl font-bold text-secondary mb-4">Help Center</h1>
-                            <p class="text-gray-600 text-lg">How can we help you today?</p>
-                            <!-- Search Box -->
-                            <div class="mt-8 max-w-2xl mx-auto relative">
-                                <input type="text" placeholder="Search for articles, questions, or topics..." class="w-full pl-12 pr-4 py-4 rounded-full border-2 border-gray-200 focus:border-primary focus:outline-none focus:ring-0 text-gray-700 text-lg transition">
-                                <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-6 h-6"></i>
-                                <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white px-6 py-2 rounded-full font-bold hover:bg-orange-600 transition">Search</button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div class="border border-gray-200 p-8 rounded-2xl text-center hover-lift cursor-pointer hover:border-primary transition" onclick="navigate('track')">
-                                <div class="w-16 h-16 mx-auto bg-blue-50 text-secondary rounded-full flex items-center justify-center mb-4">
-                                    <i data-lucide="package" class="w-8 h-8"></i>
-                                </div>
-                                <h3 class="font-heading font-bold text-xl text-secondary mb-2">Order Issues</h3>
-                                <p class="text-gray-600 text-sm">Where is my order? Missing items, or incorrect delivery.</p>
-                            </div>
-                            <div class="border border-gray-200 p-8 rounded-2xl text-center hover-lift cursor-pointer hover:border-primary transition">
-                                <div class="w-16 h-16 mx-auto bg-green-50 text-green-600 rounded-full flex items-center justify-center mb-4">
-                                    <i data-lucide="credit-card" class="w-8 h-8"></i>
-                                </div>
-                                <h3 class="font-heading font-bold text-xl text-secondary mb-2">Payments & Refunds</h3>
-                                <p class="text-gray-600 text-sm">Payment methods, failed transactions, and refund status.</p>
-                            </div>
-                            <div class="border border-gray-200 p-8 rounded-2xl text-center hover-lift cursor-pointer hover:border-primary transition">
-                                <div class="w-16 h-16 mx-auto bg-orange-50 text-primary rounded-full flex items-center justify-center mb-4">
-                                    <i data-lucide="user" class="w-8 h-8"></i>
-                                </div>
-                                <h3 class="font-heading font-bold text-xl text-secondary mb-2">Account Management</h3>
-                                <p class="text-gray-600 text-sm">Updating details, password resets, and app settings.</p>
-                            </div>
-                        </div>
-                        <div class="mt-16 bg-accent rounded-3xl p-10 text-center">
-                            <h2 class="font-heading text-2xl font-bold text-secondary mb-4">Still need help?</h2>
-                            <p class="text-gray-600 mb-6">Our customer support team is available 24/7 to assist you.</p>
-                            <button onclick="navigate('chat')" class="bg-secondary text-white px-8 py-3 rounded-full font-bold hover:bg-blue-900 transition flex items-center gap-2 mx-auto">
-                                <i data-lucide="message-square" class="w-5 h-5"></i> Open Live Chat </button>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <!-- ================= PAGE: TRACK ORDER ================= -->
-            <div id="page-track" class="page-view">
-                <section class="py-16 lg:py-24 bg-accent">
-                    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="bg-white rounded-3xl shadow-md p-8 md:p-12">
-                            <div class="text-center mb-10">
-                                <div class="w-20 h-20 mx-auto bg-orange-100 text-primary rounded-full flex items-center justify-center mb-6">
-                                    <i data-lucide="map" class="w-10 h-10"></i>
-                                </div>
-                                <h1 class="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">Track Your Order</h1>
-                                <p class="text-gray-600">Enter your order ID below to see the current status of your delivery.</p>
-                            </div>
-                            <form class="space-y-6" onsubmit="event.preventDefault(); alert('Tracking feature requires app installation or login.');">
-                                <div>
-                                    <label for="order-id" class="block text-sm font-medium text-gray-700 mb-2">Order ID or Tracking Number</label>
-                                    <input type="text" id="order-id" placeholder="e.g. SXP-102938" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition" required>
-                                </div>
-                                <div>
-                                    <label for="phone-number" class="block text-sm font-medium text-gray-700 mb-2">Phone Number used for order</label>
-                                    <input type="tel" id="phone-number" placeholder="+234 XXX XXX XXXX" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition" required>
-                                </div>
-                                <button type="submit" class="w-full bg-primary text-white font-bold text-lg px-8 py-4 rounded-xl hover:bg-orange-600 transition shadow-lg mt-4"> Track Order </button>
-                            </form>
-                            <div class="mt-8 text-center">
-                                <p class="text-sm text-gray-500">For real-time GPS tracking, please use the <a href="#" class="text-primary font-semibold hover:underline">Scooty XP App</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <!-- ================= PAGE: LIVE CHAT ================= -->
-            <div id="page-chat" class="page-view">
-                <section class="py-16 lg:py-24 bg-white">
-                    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="text-center mb-8">
-                            <h1 class="font-heading text-3xl font-bold text-secondary">Live Support Chat</h1>
-                            <p class="text-gray-600">You are connected to a support agent.</p>
-                        </div>
-                        <!-- Chat UI Mockup -->
-                        <div class="border border-gray-200 rounded-2xl overflow-hidden flex flex-col h-[500px] shadow-sm">
-                            <!-- Header -->
-                            <div class="bg-secondary text-white p-4 flex items-center justify-between">
-                                <div class="flex items-center gap-3">
-                                    <div class="relative">
-                                        <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                                            <i data-lucide="user" class="w-6 h-6"></i>
-                                        </div>
-                                        <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-secondary rounded-full"></div>
-                                    </div>
-                                    <div>
-                                        <p class="font-bold text-sm leading-tight">Scooty Support Agent</p>
-                                        <p class="text-xs text-blue-200">Online</p>
-                                    </div>
-                                </div>
-                                <button class="text-white/70 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
-                            </div>
-                            <!-- Messages Area -->
-                            <div class="flex-grow bg-accent p-6 flex flex-col gap-4 overflow-y-auto">
-                                <div class="text-center text-xs text-gray-400 my-2">Today, 10:42 AM</div>
-                                <!-- Incoming Message -->
-                                <div class="flex gap-3 max-w-[80%]">
-                                    <div class="w-8 h-8 bg-primary/10 rounded-full flex-shrink-0 flex items-center justify-center text-primary">
-                                        <i data-lucide="bot" class="w-5 h-5"></i>
-                                    </div>
-                                    <div class="bg-white border border-gray-100 p-3 rounded-2xl rounded-tl-none shadow-sm text-sm text-gray-700"> Hi there! 👋 Welcome to Scooty XP support. How can I help you today? </div>
-                                </div>
-                                <!-- User Actions / Suggested Replies -->
-                                <div class="flex flex-wrap gap-2 mt-2">
-                                    <button class="text-xs border border-primary text-primary px-3 py-1.5 rounded-full hover:bg-primary hover:text-white transition">Where is my order?</button>
-                                    <button class="text-xs border border-primary text-primary px-3 py-1.5 rounded-full hover:bg-primary hover:text-white transition">I have a payment issue</button>
-                                    <button class="text-xs border border-primary text-primary px-3 py-1.5 rounded-full hover:bg-primary hover:text-white transition">Speak to a human</button>
-                                </div>
-                            </div>
-                            <!-- Input Area -->
-                            <div class="p-4 bg-white border-t border-gray-200 flex items-center gap-3">
-                                <button class="text-gray-400 hover:text-secondary"><i data-lucide="paperclip" class="w-5 h-5"></i></button>
-                                <input type="text" placeholder="Type your message..." class="flex-grow bg-gray-100 border-none rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50">
-                                <button class="bg-primary text-white p-2 rounded-full hover:bg-orange-600 transition">
-                                    <i data-lucide="send" class="w-5 h-5 ml-0.5"></i>
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -1836,34 +1688,6 @@
                     </section>
                 </div>
             </div>
-            </div>
-            <!-- ================= PAGE: LOGIN (redirects to app) ================= -->
-            <div id="page-login" class="page-view">
-                <section class="py-16 lg:py-24 bg-accent min-h-[80vh] flex items-center">
-                    <div class="max-w-md mx-auto px-4 w-full text-center">
-                        <div class="w-20 h-20 mx-auto bg-primary/10 text-primary rounded-full flex items-center justify-center mb-6">
-                            <i data-lucide="smartphone" class="w-10 h-10"></i>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-secondary mb-4">Log In via the App</h2>
-                        <p class="text-gray-600 mb-8">Account login is handled through the MyScooty app. Download it now to sign in, place orders, and track deliveries.</p>
-                        <button onclick="navigate('download')" class="bg-primary hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-full text-lg transition shadow-lg inline-flex items-center gap-2">
-                            <i data-lucide="download" class="w-5 h-5"></i> Get the App </button>
-                    </div>
-                </section>
-            </div>
-            <!-- ================= PAGE: SIGN UP (redirects to app) ================= -->
-            <div id="page-signup" class="page-view">
-                <section class="py-16 lg:py-24 bg-accent min-h-[80vh] flex items-center">
-                    <div class="max-w-md mx-auto px-4 w-full text-center">
-                        <div class="w-20 h-20 mx-auto bg-primary/10 text-primary rounded-full flex items-center justify-center mb-6">
-                            <i data-lucide="smartphone" class="w-10 h-10"></i>
-                        </div>
-                        <h2 class="font-heading text-3xl font-bold text-secondary mb-4">Sign Up via the App</h2>
-                        <p class="text-gray-600 mb-8">Create your MyScooty account directly in the app. Download it for free from the App Store or Google Play.</p>
-                        <button onclick="navigate('download')" class="bg-primary hover:bg-orange-600 text-white font-bold px-8 py-3.5 rounded-full text-lg transition shadow-lg inline-flex items-center gap-2">
-                            <i data-lucide="download" class="w-5 h-5"></i> Get the App </button>
-                    </div>
-                </section>
             </div>
             <!-- ================= PAGE: DOWNLOAD ================= -->
             <div id="page-download" class="page-view">
