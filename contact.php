@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Message:\n$message\n";
 
     // Set email headers to easily reply directly to the customer
-    $headers = "From: Scooty XP Contact Form <$email>\r\n";
+    $headers = "From: Scooty XP Contact Form\r\n";
     $headers .= "Reply-To: $email\r\n";
 
     // Send the email using cPanel's native mail function
